@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 18px;
+
+}
+
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #333;
+}
+
+.wrapper{
+    
+    display: grid;
+}
+
+.content{
+    
+    max-width:600px;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.container{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.top-container{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    padding: 0.5em;
+    background: #ddd;
+}
+
+.square{
+    
+    display: grid;
+    
+}
+
+button{
+    
+    display: grid;
+    width: 100px;
+    height: 100px;
+    border:3px solid #ddd;
+    position: relative;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #fff;   
+    outline: none;
+    color: darkseagreen;
+}
+
+.bottom-container{
+    
+    display: grid;
+    background: #fff;
+}
+
+.title-header{
+    
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.state{
+    
+    text-align: center;
+    font-size: 1.4rem;
+    color: #707070;
+    font-weight: bold;
+    font-family: monospace;
+    
+}
+
+.controls{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn{
+    
+    padding: 0.5em 1em;
+    font-size: 1.1rem;
+    color:#fff;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    transition: transform .5s linear;
+}
+
+.btn:active{
+    
+    transform:scale(0.8);
+    color: #000;
+}
+
+#reset{
+    
+    background: skyblue;
+}
+
+#quit{
+    
+    background: red;
+}
